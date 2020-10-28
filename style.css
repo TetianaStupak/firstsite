@@ -1,0 +1,32 @@
+ table {
+        color: green;
+        border-radius:10px;
+        border: 2px solid red;
+   }
+   [href="#idevepoter"] {
+        color: brown;
+   }
+     li[height="50"] {
+        color: chocolate;
+    }
+    .privet {
+        color: green;
+    }
+    #idevepoter {
+        font-weight: bold;
+    }
+    html tr {
+        color: yellow;
+    }
+    .list > li {
+        color: blue;
+    }
+    .front-size-md {
+        font-size: 18px;
+    }
+    .front-size-md.color-red {
+        color: red;
+    }
+    .front-size-md.color-green {
+        color: green;
+    }
