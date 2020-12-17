@@ -1,0 +1,131 @@
+h2 { color: #a1bd57; }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+   }
+li {
+    margin-bottom: 3px;
+   }
+li span {
+    float: right;
+    font-size: 0.8rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e6e1d7;
+    text-align: center;
+    line-height: 20px;
+   }
+a {
+    color: #a58039;
+    display: block; 
+    text-decoration: none;
+   }
+a::before {
+    content: '★';
+    color: #a44823;
+    margin-right: 5px;
+    }
+.author {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    background: #f5f6f8;
+    color: #333;
+    border: 1px solid #e9eaec;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    overflow: hidden;
+}
+.author img {
+    float: right;
+    border: 2px solid #848994;
+    border-radius: 100px;
+}
+.author h1 {
+    font-weight: normal;
+}
+.author p {
+    font-size: 0.9em;
+}
+.author h1, .author p {
+    margin: 5px 180px 0 0;
+}
+form {
+    background: #f5f4f1f;
+    width: 300px;
+    margin: auto;
+    padding: 30px 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    text-align: center;
+    font-variant: small-caps;
+}
+.form-control {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+}
+.remember {
+    text-align: right;
+    font-style: normal;
+}
+button {
+    background: #CE242B; /* Красный фон */
+    color: #fff; /* Белый цвет текста */
+    border: none; /* Убираем рамку */
+    padding: .7rem 2rem; /* Поля вокруг текста */
+    box-shadow: 5px 5px 0 #000; /* Параметры тени */
+    position: relative; /* Относительное позиционирование */
+    left: 0; /* Положение слева */
+    top: 0; /* Положение сверху */
+    transition: 1s; /* Время анимации */
+}
+button:hover {
+    left: 5px; /* Положение слева */
+    top: 5px; /* Положение сверху */
+    box-shadow: 0 0 0 #000; /* Параметры тени */
+}
+img {
+    border: 1px solid #ce242b; /* Параметры рамки */
+    position: relative; /* Относительное позиционирование */
+    transition: 1s; /* Время анимации */
+}
+img:hover {
+    z-index: 10; /* Поверх всех картинок */
+    transform: scale(1.2); /* Масштабирование на 20% */
+}
+.block {
+    background: #795548;
+    padding: 20px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.block h3 {
+    color: #feea3b;
+    overflow: hidden;
+    font-weight: normal;
+    margin-top: 0;
+    text-align: center;
+}
+.block h3::before, .block h3::after {
+    content: '';
+    background: #feea3b;
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.block h2::before {
+    right: 10px;
+    margin-left: -50%;
+}   
+.block h2::after {
+    left: 10px;
+    margin-right: -50%;
+}

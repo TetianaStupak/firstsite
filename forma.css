@@ -1,8 +1,6 @@
-p {
-   color: red;
-   font-weight: bold;       
-}
+
 blockquote {
     background: lightgreen;
     color: darkgreen;
   }
+ p { font-variant: small-caps; }

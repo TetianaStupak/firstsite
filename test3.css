@@ -1,0 +1,103 @@
+.cards {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform-origin: 50% 100%;
+   }
+.card1 {
+    transform: rotateZ(-30deg);
+    }
+.card2 {
+    transform: rotateZ(0deg);
+    }
+.card3 {
+transform: rotateZ(30deg);
+    }
+position: relative; /* Относительное позиционирование */
+}
+/* Выводим треугольник */
+[data-tooltip]:hover::before {
+ content: '';
+ position: absolute;
+ top: 1.4em; left: 20px;
+ width: 0; height: 0; 
+ border-left: 10px solid transparent;
+ border-right: 10px solid transparent;
+ border-bottom: 10px solid #3989c9;
+} 
+/* Выводим саму подсказку */
+[data-tooltip]:hover::after {
+ content: attr(data-tooltip); /* Выводим текст */
+ position: absolute; /* Абсолютное позиционирование */
+ width: 400px; /* Ширина подсказки */
+ left: 0; top: 2em; /* Положение подсказки */
+ background: #3989c9; /* Синий цвет фона */
+ color: #fff; /* Цвет текста */
+ padding: 0.5em; /* Поля вокруг текста */
+ border-radius: 5px; /* Скругляем уголки */
+}
+.cocktail {
+    display: inline-block;
+    padding: 12px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.cocktail::after, .cocktail::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 70px;
+    height: 70px;
+    left: -40px;
+    bottom: -40px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    outline: #c2b59d dashed 1px;
+    outline-offset: -3px;
+    background: #f7f6f2;
+}
+.cocktail::after {
+    left: auto;
+    right: -40px;
+    top: -40px;
+}
+.cocktail img {
+    display: block;
+    padding: 4px;
+    background: #dad6cf;
+    border: 2px solid #c2b59d;
+}
+body {
+    min-height: 1000px;
+}
+.menu {
+    background: #edf6ff;
+    width: 140px;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    position: fixed;
+    right: 10px;
+    top: 100px;
+}
+.menu a {
+    color: #1b4268;
+}
+body { min-height: 1000px; 
+}
+ul {
+    background: #b41a83;
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+}
+li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+a { 
+    color: #fff; 
+    text-decoration: none;
+}

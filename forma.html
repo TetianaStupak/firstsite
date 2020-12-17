@@ -2,7 +2,8 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <title>Подсказки</title>
+  <title>my study</title>
+  <link rel="stylesheet" href="style.css">
  </head>
  <body>
   <form>
@@ -26,5 +27,85 @@
    <option>Уфа</option>
    <option>Челябинск</option>
   </datalist>
+  <form action="handler.php">
+   <p><strong>Логин:</strong>
+      <input maxlength="25" size="40" name="login"></p>
+   <p><strong>Пароль:</strong>
+      <input type="password" maxlength="25" size="40" name="password"></p>
+   <p><input type="submit" value="Войти"></p>
+  </form>
+  <section>
+      <p>
+        Следует помнить, что хотя пароль в браузере и не виден, но на сервер по протоколу HTTP он 
+        передаётся незашифрованным и его можно перехватить. Также пароль, заранее заданный в атрибуте value, 
+        можно подсмотреть в исходном коде веб-страницы или с помощью специальных плагинов.
+      </p>
+  </section>
+  <form action="handler.php">
+    <p><strong>Введите ваш отзыв:</strong></p>
+    <p><textarea name="comment"></textarea></p>
+    <p><input type="submit"></p>
+    <p><input type="button" value=" Нажми меня нежно "></p>
+    <button onclick="alert('my button')">
+         <img src="sun-button.png" alt="" style="vertical-align:middle"> 
+         Кнопка с рисунком
+    </button></p>
+   </form>
+   <form>
+    <p><b>Какое у вас состояние разума?</b></p>
+     <p><input name="dzen" type="radio" value="nedzen"> Не дзен</p>
+     <p><input name="dzen" type="radio" value="dzen"> Дзен</p>
+     <p><input name="dzen" type="radio" value="pdzen" checked> Полный дзен</p>
+     <p><input type="submit" value="Выбрать"></p>
+     <p>Заметьте, что в данном примере значение атрибута name для всех переключателей одинаково, 
+         именно в таком случае браузер понимает, что переключатели связаны между собой и помечает 
+         только один пункт из предложенных. Значение атрибута value же должно различаться, чтобы 
+         обработчик формы мог понять, какой вариант выбран пользователем.</p>
+   </form> 
+   <form>
+    <p>В каких годах произошли самые известные извержения вулкана Кракатау?</p>
+    <p><input type="checkbox" name="a" value="1417"> 1417</p>
+    <p><input type="checkbox" name="a" value="1680" checked> 1680</p>
+    <p><input type="checkbox" name="a" value="1883" checked> 1883</p>
+    <p><input type="checkbox" name="a" value="1934"> 1934</p>
+    <p><input type="checkbox" name="a" value="2010"> 2010</p>
+    <p><input type="submit" value="Отправить"></p>
+   </form>
+   <form enctype="multipart/form-data" method="post">
+    <p><input type="file" name="f">
+    <input type="submit" value="Отправить"></p>
+   </form> 
+   <form enctype="multipart/form-data" method="post">
+    <p>Загрузите ваши фотографии на сервер</p>
+    <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+    <input type="submit" value="Отправить"></p>
+   </form>
+   <form>
+    <select name="day">
+     <option value="mon">Понедельник</option>
+     <option value="tue">Вторник</option>
+     <option value="wed" selected>Среда</option>
+     <option value="thu">Четверг</option>
+     <option value="fri">Пятница</option>
+     <option value="sat">Суббота</option>
+     <option value="sun">Воскресенье</option>
+    </select>
+   </form> 
+   <form>
+    <p><select name="food">
+     <optgroup label="Русская кухня">
+      <option value="r1">Закуска Барская</option>
+      <option value="r2">Раки, фаршированные по-царски</option>
+      <option value="r3">Биточки в горшочке</option>
+     </optgroup>
+     <optgroup label="Украинская кухня">
+      <option value="u1">Галушки славянские</option>
+      <option value="u2">Пампушки украинские</option>
+      <option value="u3">Жаркое по-харьковски</option>
+     </optgroup>
+    </select></p>
+    <p><input type="submit" value="Отправить"></p>
+   </form>
  </body>
 </html>
+ 

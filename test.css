@@ -1,0 +1,135 @@
+span {font-family: Oswald, sans-serif;  
+    background: #e2ba8a;
+    padding: 10px;  }
+p {font-weight: bold;}
+.light { 
+    font-weight: 100;
+}
+.regular { 
+    font-weight: normal;
+}
+.medium { 
+    font-weight: 500;
+}
+.semi-bold { 
+    font-weight: 600;
+}
+.bold { 
+    font-weight: bold;
+}
+.learn {
+background: #d2f7ff;
+font-weight: 100%;
+border-collapse: collapse;
+}
+td, th {
+    padding: 10px;
+    border:2px solid white;
+}
+.box {
+    background: tomato;
+    color: pink
+    padding: 10px;
+    border: 6px double pink
+}
+.study {
+    width: 80%; /* Ширина таблицы */
+    margin: auto; /* Выравниваем по центру */
+    border-collapse: initial;
+}
+.study td {
+    border: 1px solid #000;
+}
+.study td:nth-child(3) {
+    text-align: center
+}
+.login {
+    background: #fff; /* Цвет фона формы */
+    width: 300px; /* Ширина формы */
+    margin: auto; /* Выравниваем по центру */
+    padding: 30px; /* Поля вокруг */
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Параметры тени */
+    box-sizing: border-box; /* Ширина не учитывает padding */
+}
+.login div {
+    margin-top: 15px; /* Отступ снизу */
+}
+.login div:first-child { margin: 0; }
+.login input, .login button { 
+    padding: 10px; /* Поля вокруг */
+    box-sizing: border-box; /* Ширина не учитывает padding */
+    width: 100%; /* Ширина */
+}
+body {
+    background: rgb(163, 163, 218);
+}
+form {
+   background: #2b417a;
+   padding: 20px;
+   margin: 20px;
+   border: 1px solid #44567e;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.row {
+    overflow: hidden;
+    margin-bottom: 1rem;
+   } /*Добавили расстояние между элементами*/
+label {
+    color: #8dacfe;
+    width: 100px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+}
+input, textarea {
+    background: #182a50;
+    box-shadow: inset -2px -2px 2px #425575;
+    width: 300px;
+    border: none;
+    color: #fff;
+    padding: 5px;
+}
+textarea {
+    height: 100px;
+}
+button {
+    margin-left: 110px;
+    background: #0d1321;
+    border: none;
+    color: #6d82bb;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ul {
+    background: #b41a83;
+    padding: 10px 15px;
+   }
+li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+a { 
+    color: #fff; 
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: underline;
+}
+div {
+    color: #f5faf4; /* Цвет текста */
+    padding: 10px 20px; /* Поля вокруг текста */
+    margin-bottom: 1em; /* Отступ снизу */
+   }
+   .ltr { 
+    float: left;
+    background: #69539c; /* Цвет фона */
+    margin-right: 10px; /* Отступ справа */
+   }
+   .rtl { 
+    float: right;
+    background: #37673f; /* Цвет фона */
+    margin-left: 10px; /* Отступ слева */
+   }
+
